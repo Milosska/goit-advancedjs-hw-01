@@ -38,3 +38,53 @@ h1 {
   background-color: #2e2f42;
 }
 /* #endregion Menu styles */
+
+/* #region Gallery styles */
+:root {
+  --gap-value: 24px;
+  --items: 3;
+  --transition-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-value);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 24px;
+
+  list-style: none;
+}
+
+.gallery-item {
+  flex-basis: calc(
+    (100% - (var(--gap-value) * (var(--items) - 1))) / var(--items)
+  );
+}
+
+.gallery-link {
+  display: inline-block;
+  cursor: zoom-in;
+
+  transition: transform var(--transition-hover);
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  object-fit: cover;
+}
+
+.modal {
+  max-width: 100%;
+  width: 1112px;
+  background-color: #fff;
+}
+/* #endregion Gallery styles*/
