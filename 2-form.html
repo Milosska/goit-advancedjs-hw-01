@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <!-- Normalize CSS -->
@@ -13,10 +14,24 @@
       referrerpolicy="no-referrer"
     />
     <!-- Main CSS -->
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/2-form-DG2kbpN6.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/2-form-aKSEU4UT.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/reset-BfJdjlvW.css">
   </head>
   <body>
     <a class="go-back-link" href="./index.html">Go back</a>
     <h1>Form</h1>
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input type="email" name="email" autofocus />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./js/2-form.js"></script>
   </body>
 </html>
