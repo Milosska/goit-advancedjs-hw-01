@@ -40,4 +40,27 @@ h1 {
 .menu-link:focus {
   background-color: #2e2f42;
 }
+
+.go-back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  display: inline-block;
+  min-width: 150px;
+  padding: 5px 10px;
+  background-color: darkolivegreen;
+  border: 2px solid #2e2f42;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.go-back-link:hover,
+.go-back-link:focus {
+  background-color: #2e2f42;
+}
 /* #endregion Menu styles */
